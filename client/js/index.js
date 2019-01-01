@@ -1,6 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { AppContainer } from './containers/AppContainer';
 
-const Header = () => <h1>React Header</h1>;
-
-ReactDOM.render(<Header/>, document.getElementById('root'));
+new AppContainer(document.getElementById('root'));

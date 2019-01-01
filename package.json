@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "build": "parcel build ./client/index.html",
-    "lint": "eslint --ext=.js . && sass-lint -c -v -q",
+    "lint": "eslint --ext=.js,.jsx . && sass-lint -c -v -q",
     "test": "jest --no-cache . --passWithNoTests",
     "watch": "parcel ./client/index.html -p 3000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mskalandunas/breeze.git"
+    "url": "git+https://github.com/mosaic-development-studio/breeze.git"
   },
-  "author": "Mike Skalandunas <mskalandunas@gmail.com>",
+  "author": "Mike Skalandunas <mosaic-development-studio@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mskalandunas/breeze/issues"
+    "url": "https://github.com/mosaic-development-studio/breeze/issues"
   },
-  "homepage": "https://github.com/mskalandunas/breeze#readme",
+  "homepage": "https://github.com/mosaic-development-studio/breeze#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.11.1",

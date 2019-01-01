@@ -1,3 +1,3 @@
-import { AppBase } from './components/AppBase';
+import { AppContainer } from './containers/AppContainer';
 
-new AppBase(document.getElementById('root'));
+new AppContainer(document.getElementById('root'));

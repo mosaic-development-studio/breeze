@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { BreezeBase } from './BreezeBase';
+import { BreezeBase } from '../components/BreezeBase';
 
-export class AppBase {
+export class AppContainer {
     constructor(appRoot) {
         this.appRoot = appRoot;
         this.unmount = this.unmount.bind(this);

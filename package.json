@@ -1,0 +1,38 @@
+{
+  "name": "breeze",
+  "version": "0.1.0",
+  "description": "A date/time/weather app built with React",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build ./client/index.html",
+    "lint": "eslint --ext=.js . && sass-lint -c -v -q",
+    "test": "jest --no-cache . --passWithNoTests",
+    "watch": "parcel ./client/index.html -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskalandunas/breeze.git"
+  },
+  "author": "Mike Skalandunas <mskalandunas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskalandunas/breeze/issues"
+  },
+  "homepage": "https://github.com/mskalandunas/breeze#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.11.1",
+    "eslint-config-mosaic": "^0.1.2",
+    "eslint-plugin-react": "^7.12.0",
+    "jest": "^23.6.0",
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.11.0",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.1",
+    "sass-lint": "^1.12.1"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}

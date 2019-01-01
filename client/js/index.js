@@ -1,6 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { AppBase } from './components/AppBase';
 
-const Header = () => <h1>React Header</h1>;
-
-ReactDOM.render(<Header/>, document.getElementById('root'));
+new AppBase(document.getElementById('root'));

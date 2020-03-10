@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { BreezeBase } from '../components/BreezeBase';
+import { AppBase } from '../components/AppBase';
 
 export class AppContainer {
     constructor(appRoot) {
         this.appRoot = appRoot;
         this.unmount = this.unmount.bind(this);
 
-        ReactDOM.render(<BreezeBase unmount={this.unmount}/>, appRoot);
+        ReactDOM.render(<AppBase unmount={this.unmount}/>, appRoot);
     }
 
     unmount() {

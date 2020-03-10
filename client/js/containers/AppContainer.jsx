@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { AppBase } from '../components/AppBase';
+import { CalendarBase } from '../components/CalendarBase';
 
 export class AppContainer {
     constructor(appRoot) {
         this.appRoot = appRoot;
         this.unmount = this.unmount.bind(this);
 
-        ReactDOM.render(<AppBase unmount={this.unmount}/>, appRoot);
+        ReactDOM.render(<CalendarBase unmount={this.unmount}/>, appRoot);
     }
 
     unmount() {

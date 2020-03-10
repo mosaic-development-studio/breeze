@@ -1,4 +1,4 @@
-const days = {
+const DAYS = {
     MONDAY: 'monday',
     TUESDAY: 'tuesday',
     WEDNESDAY: 'wednesday',
@@ -8,38 +8,34 @@ const days = {
     SUNDAY: 'sunday'
 };
 
-const dayAbbreviations = {
-    [days.MONDAY]: 'Mon',
-    [days.TUESDAY]: 'Tue',
-    [days.WEDNESDAY]: 'Wed',
-    [days.THURSDAY]: 'Thu',
-    [days.FRIDAY]: 'Fri',
-    [days.SATURDAY]: 'Sat',
-    [days.SUNDAY]: 'Sun'
+const DAY_ABBREVIATION = {
+    [DAYS.MONDAY]: 'Mon',
+    [DAYS.TUESDAY]: 'Tue',
+    [DAYS.WEDNESDAY]: 'Wed',
+    [DAYS.THURSDAY]: 'Thu',
+    [DAYS.FRIDAY]: 'Fri',
+    [DAYS.SATURDAY]: 'Sat',
+    [DAYS.SUNDAY]: 'Sun'
 };
 
-export const tableData = [
-    {
-        day: dayAbbreviations[days.SUNDAY]
-    },
-    {
-        day: dayAbbreviations[days.MONDAY]
-    },
-    {
-        day: dayAbbreviations[days.TUESDAY]
-    },
-    {
-        day: dayAbbreviations[days.WEDNESDAY]
-    },
-    {
-        day: dayAbbreviations[days.THURSDAY]
-    },
-    {
-        day: dayAbbreviations[days.FRIDAY]
-    },
-    {
-        day: dayAbbreviations[days.SATURDAY]
-    }
+const DAY_SINGLE_LETTER_ABBREVIATION = {
+    [DAYS.MONDAY]: 'M',
+    [DAYS.TUESDAY]: 'T',
+    [DAYS.WEDNESDAY]: 'W',
+    [DAYS.THURSDAY]: 'T',
+    [DAYS.FRIDAY]: 'F',
+    [DAYS.SATURDAY]: 'S',
+    [DAYS.SUNDAY]: 'S'
+};
+
+export const TABLE_HEADERS = [
+    DAY_SINGLE_LETTER_ABBREVIATION[DAYS.SUNDAY],
+    DAY_SINGLE_LETTER_ABBREVIATION[DAYS.MONDAY],
+    DAY_SINGLE_LETTER_ABBREVIATION[DAYS.TUESDAY],
+    DAY_SINGLE_LETTER_ABBREVIATION[DAYS.WEDNESDAY],
+    DAY_SINGLE_LETTER_ABBREVIATION[DAYS.THURSDAY],
+    DAY_SINGLE_LETTER_ABBREVIATION[DAYS.FRIDAY],
+    DAY_SINGLE_LETTER_ABBREVIATION[DAYS.SATURDAY]
 ];
 
 export const weatherIcons = {

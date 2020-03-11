@@ -71,7 +71,13 @@ const getDaysOfTheMonthCount = (monthIndex, year) => {
     }
 };
 
-const findCalendarRowCount = (firstDayOfMonth, dayCount) => {
-    return Math.ceil((firstDayOfMonth + dayCount) / 7);
+const createCalendarRowCount = (findIndexOfFirstDayOfMonth, getDaysOfTheMonthCount) => (monthIndex, year) => {
+    return Math.ceil(
+        (
+            findIndexOfFirstDayOfMonth(monthIndex, year) +
+            getDaysOfTheMonthCount(monthIndex, year)
+        ) / 7
+    );
 };
 
+export const findCalendarRowCount = createCalendarRowCount(findIndexOfFirstDayOfMonth, getDaysOfTheMonthCount);
